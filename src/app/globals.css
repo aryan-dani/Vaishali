@@ -1,0 +1,79 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* Deep Leaf Green — Heritage Palette */
+  --color-leaf-950: #0c2116;
+  --color-leaf-900: #122e1f;
+  --color-leaf-800: #1b432d;
+  --color-leaf-700: #265c3f;
+  --color-leaf-600: #367a55;
+  --color-leaf-100: #e6efe9;
+  --color-leaf-50:  #f3f7f4;
+
+  /* Warm Cream / Archival Paper */
+  --color-cream-50:  #faf6ee;
+  --color-cream-100: #f3ece0;
+  --color-cream-200: #e5dccb;
+  --color-cream-300: #d2c5ae;
+
+  /* Turmeric / Aged Brass Accent */
+  --color-turmeric-500: #c88218;
+  --color-turmeric-400: #dfa035;
+  --color-saffron-600:  #a65212;
+  --color-turmeric-100: #fbf1de;
+
+  /* Near-Black Ink */
+  --color-ink-900: #141915;
+  --color-ink-700: #3b443d;
+  --color-ink-500: #68736b;
+}
+
+html {
+  scroll-behavior: smooth;
+  background-color: var(--color-cream-50);
+  color: var(--color-ink-900);
+}
+
+body {
+  background-color: var(--color-cream-50);
+  color: var(--color-ink-900);
+  font-feature-settings: "kern" 1, "liga" 1;
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+}
+
+/* Subtle paper grain texture overlay */
+.bg-paper-grain {
+  background-image: radial-gradient(rgba(18, 46, 31, 0.04) 1px, transparent 0);
+  background-size: 24px 24px;
+}
+
+/* Dotted menu leader */
+.menu-leader {
+  background-image: radial-gradient(circle, var(--color-cream-300) 1px, transparent 1px);
+  background-position: bottom;
+  background-size: 6px 1px;
+  background-repeat: repeat-x;
+}
+
+/* Custom subtle scrollbars */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
