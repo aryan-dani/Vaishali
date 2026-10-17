@@ -12,33 +12,11 @@ export default function HomePage() {
       {/* Floating Navigation Dock */}
       <FloatingDock />
 
-      {/* Minimal Print-Style Top Masthead */}
-      <header className="border-b border-[#d2c5ae] bg-[#faf6ee]/90">
-        <div className="max-w-[1220px] mx-auto px-5 md:px-10 h-14 flex items-center justify-between text-[11px] uppercase tracking-[0.18em] text-[#3b443d]">
-          <div className="flex items-center gap-3">
-            <span className="w-2 h-2 rounded-full bg-[#1b432d]" />
-            <span className="font-semibold text-[#0c2116]">Hotel Vaishali</span>
-            <span className="hidden sm:inline text-[#d2c5ae]">|</span>
-            <span className="hidden sm:inline">Est. 1951 · Fergusson College Road</span>
-          </div>
-
-          <div className="flex items-center gap-5">
-            <span className="hidden lg:inline">Open Daily · 7:00 AM – 11:00 PM</span>
-            <a
-              href="tel:+912025531244"
-              className="font-semibold text-[#0c2116] hover:text-[#a65212] transition-colors"
-            >
-              (020) 25531244
-            </a>
-          </div>
-        </div>
-      </header>
-
       <main className="flex-1">
         {/* =================================================================
             1. HERO — EDITORIAL SPREAD & PHOTOGRAPHIC DIPTYCH
         ================================================================== */}
-        <section className="pt-12 pb-16 md:pt-24 md:pb-24">
+        <section className="pt-24 pb-16 md:pt-32 md:pb-24">
           <div className="max-w-[1220px] mx-auto px-5 md:px-10">
             {/* Overline Meta */}
             <div className="flex flex-wrap items-center gap-x-4 gap-y-2 text-xs uppercase tracking-[0.18em] text-[#265c3f] font-semibold mb-6">
